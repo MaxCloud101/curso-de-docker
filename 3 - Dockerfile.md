@@ -56,6 +56,12 @@ Una vez que el build fue exitoso, vamos a lanzar el contenedor
 $ docker run -p 8000:8000 myapp
 ```
 
+Cuando se crea una imagen, automáticamente se le agrega la etiqueta "latest"; nosotros podemos agregar etiquetas a las imágenes. Por ejemplo, si quisiéramos agregar la versión a la imagen, podemos agregar ":1.0.0" después del nombre de la imagen.
+
+```sh
+$ docker build -t myapp:1.0.0 .
+```
+
 ### Pasar valores en tiempo de compilación
 
 Vamos a crear el siguiente Dockerfile

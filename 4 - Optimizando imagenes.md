@@ -103,3 +103,34 @@ Para ver el tamaño de la imagen usamos el comando ```docker image ls```
 
 Observamos que la imagen pesa 146 MB
 
+## Tercera optimización: Usamos nginx para servir las paginas
+
+Ahora tenemos un Dockerfile con dos etapas: en la primera compilamos el proyecto y en la segunda implementamos la aplicación en el servidor web. Sin embargo, un contenedor Node no es la mejor opción para servir páginas web (archivos HTML, CSS y JavaScript, imágenes, etc.), la mejor opción sería utilizar un servidor como Nginx o Apache . En este caso usaré Nginx.
+
+Modificamos el Dockerfile y usamos nginx para servir el contenido
+
+```sh
+FROM node:18-alpine AS build
+WORKDIR /app
+COPY app /app
+RUN npm install && npm run build
+
+FROM nginx:stable-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+Construimos la imagen con el comando
+
+```
+docker build -t reactapp .
+```
+
+Para ver el tamaño de la imagen usamos el comando ```docker image ls```
+
+<p align="center">
+<img src="img/reactapp4.jpg" style="max-width: 400px;">
+</p>
+
+Observamos que la imagen pesa 54.9 MB

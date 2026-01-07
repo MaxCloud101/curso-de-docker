@@ -72,7 +72,7 @@ Con la compilación de múltiples etapas, podemos usar múltiples imágenes base
 
 En este ejemplo, lo que necesitamos para implementar la aplicación React es el código compilado; no necesitamos los archivos fuente, ni el directorio node_modules , ni el package.json , etc.
 
-Modificamos el Dockerfile y usamos la construccion en varias etapas
+Modificamos el Dockerfile y usamos la construccion en multiples etapas
 
 ```sh
 FROM node:18-alpine AS build

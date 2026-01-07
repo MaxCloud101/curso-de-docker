@@ -72,3 +72,7 @@ Para construir la imagen usaremos el siguiente comando:
 ```sh
 $ docker build --build-arg APP_VERSION=2.0 -t myapp:2.0 .
 ```
+
+## No cache
+
+Para deshabilitar el uso de la caché de compilación y reconstruir todas las capas desde cero usamos el flag --no-cache .

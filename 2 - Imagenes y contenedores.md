@@ -81,6 +81,13 @@ Para eliminar una o mas imágenes corremos el comando
 ```sh
 $ docker image rm [IMAGE...]
 ```
+#### docker sarch
+
+Nos permite buscar imagenes en dockerhub. El siguiente comando me permite buscar imagenes de node en Dockerhub
+
+```sh
+$ docker seach node
+```
 
 # Trabajando con contenedores
 

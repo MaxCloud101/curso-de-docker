@@ -207,6 +207,9 @@ vamos a ver que el contenedor empieza a correr desatachado de la consola
 $ docker run --name mynginx -p 8081:80 -d nginx
 ```
 
+> [!NOTE]
+> Cuando lanzamos el comando run se inicia un proceso o un conjunto de procesos aislados. Cuando lanzamos el comando ```docker run busybox echo hello world```, el contenedor realiza la tarea de imprimir en pantalla y luego se detiene. Por otro lado, cuando lanzamos el comando ```docker run nginx```, el contenedor tiene la tarea de escuchar peticiones de manera constante; mientras no se detenga el contenedor o no encuentre un error en su ejecución, este proceso va a seguir trabajando.
+
 ##### docker container attach
 
 Para volver atachar a un contenedor que arranco con el modo DETACHED (-d) lanzamos el comando 

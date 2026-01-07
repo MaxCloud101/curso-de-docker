@@ -30,7 +30,17 @@ ENTRYPOINT: Especifica el ejecutable predeterminado.
 
 CMD: Especifique comandos predeterminados.
 
-## 2 Ejemplo
+## 2 Capas
+
+Las imágenes se componen de capas, donde cada instrucción de un Dockerfile (como RUN, COPY) crea una nueva capa con los cambios específicos, lo que permite reutilizar capas compartidas, optimizar el almacenamiento, acelerar las compilaciones y simplificar las actualizaciones incrementales
+
+Para ver las capas tenemos que ver el campo "RootFS" al lanzar el comando:
+
+```sh
+$ docker inspect nginx
+```
+
+## 3 Ejemplo
 
 Vamos a posicionarnos en la carpeta flaskapp dentro de este repositorio. Luego vamos a lanzar el siguiente comando para empezar la construccion del contenedor
 

@@ -103,7 +103,7 @@ Para ver el tamaño de la imagen usamos el comando ```docker image ls```
 
 Observamos que la imagen pesa 146 MB
 
-## Tercera optimización: Usamos nginx para servir las paginas
+## Tercera optimización: Usamos nginx para servir las aplicación
 
 Ahora tenemos un Dockerfile con dos etapas: en la primera compilamos el proyecto y en la segunda implementamos la aplicación en el servidor web. Sin embargo, un contenedor Node no es la mejor opción para servir páginas web (archivos HTML, CSS y JavaScript, imágenes, etc.), la mejor opción sería utilizar un servidor como Nginx o Apache . En este caso usaré Nginx.
 

@@ -37,7 +37,7 @@ Las imágenes se componen de capas, donde cada instrucción de un Dockerfile (co
 Para ver las capas tenemos que ver el campo "RootFS" al lanzar el comando:
 
 ```sh
-$ docker inspect nginx
+$ docker inspect <image>
 ```
 
 ## 3 Ejemplo

@@ -65,3 +65,41 @@ Para ver el tamaño de la imagen usamos el comando ```docker image ls```
 </p>
 
 Observamos que la imagen pesa 427 MB
+
+## Segunda optimización: construcción de varias etapas
+
+Con la compilación de múltiples etapas, podemos usar múltiples imágenes base en el Dockerfile y copiar artefactos, archivos de configuración, etc. de una etapa a otra, para que podamos descartar lo que no necesitamos.
+
+En este ejemplo, lo que necesitamos para implementar la aplicación React es el código compilado; no necesitamos los archivos fuente, ni el directorio node_modules , ni el package.json , etc.
+
+Modificamos el Dockerfile y usamos la construccion en varias etapas
+
+```sh
+FROM node:18-alpine AS build
+WORKDIR /app
+COPY app /app
+RUN npm install && npm run build
+
+
+FROM node:18-alpine
+WORKDIR /app
+RUN npm install -g webserver.local
+COPY --from=build /app/build ./build
+EXPOSE 3000
+CMD webserver.local -d ./build
+```
+
+Construimos la imagen con el comando
+
+```
+docker build -t reactapp .
+```
+
+Para ver el tamaño de la imagen usamos el comando ```docker image ls```
+
+<p align="center">
+<img src="img/reactapp3.jpg" style="max-width: 400px;">
+</p>
+
+Observamos que la imagen pesa 146 MB
+

@@ -44,6 +44,25 @@ $ docker inspect [IMAGE...]
 
 ### Build
 
+El comando docker build se utiliza para construir una imagen de Docker a partir de un Dockerfile y un "contexto" de archivos. 
+
+### Construyendo una aplicacion simple para calcular el factorial de un numero
+
+Vamos a posicionarnos en la carpeta factorial dentro de este repositorio. Luego vamos a lanzar el siguiente comando para empezar la construccion del contenedor
+
+```sh
+$ docker build -t factorial .
+```
+
+Una vez que el build fue exitoso, vamos a lanzar el contenedor
+
+```sh
+$ docker run factorial 5
+```
+Vamos a ver que se nos muestra el resultado en pantalla
+
+### Contruyendo una aplicacion Web
+
 Vamos a posicionarnos en la carpeta flaskapp dentro de este repositorio. Luego vamos a lanzar el siguiente comando para empezar la construccion del contenedor
 
 ```sh

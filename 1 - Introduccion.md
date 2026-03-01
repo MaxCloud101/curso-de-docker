@@ -1,5 +1,23 @@
 # Trabajando con Docker
 
+## ¿Que es Docker?
+
++ Docker es una plataforma que permite crear, ejecutar, actualizar y administrar contenedores.
+
++ Un contenedor es un empaquetado que contiene el código y las dependencias de una aplicación en un formato estándar que permite su ejecución rápida y fiable en entornos de computo.
+
++ El mismo contenedor siempre produce exactamente la misma aplicación y comportamiento de ejecución, sin importar dónde o quién la ejecute.
+
+## ¿Para que usamos docker?
+
++ Docker es usado con diferentes propósitos, por ejemplo:
+  + Llevar código de aplicaciones web a ambientes de pruebas o productivos
+  + Desplegar trabajos en batch dentro de contenedores
+  + Empaquetar código con modelos de machine learning para enviar a entrenar
+  + Desplegar bases de datos de pruebas como postgres, redis, etc
+  + Contenedores acelerados con GPU para cargas de trabajo en computación grafica
+
+
 ## 1 Información de Docker
 
 Se pueden utilizar los siguientes subcomandos para obtener más información sobre la instalación y el uso de Docker:

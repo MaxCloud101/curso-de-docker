@@ -18,7 +18,7 @@
   + Contenedores acelerados con GPU para cargas de trabajo en computación grafica
 
 
-## 1 Información de Docker
+## Información de Docker
 
 Se pueden utilizar los siguientes subcomandos para obtener más información sobre la instalación y el uso de Docker:
 
@@ -45,7 +45,7 @@ Imprime información de la versión de Docker para el cliente y el servidor, as�
 $ docker version
 ```
 
-## 2 Comandos útiles en linux
+## Comandos útiles en linux
 
 #### ls
 

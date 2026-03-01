@@ -17,6 +17,9 @@
   + Desplegar bases de datos de pruebas como postgres, redis, etc
   + Contenedores acelerados con GPU para cargas de trabajo en computación grafica
 
+## Arquitectura de Docker
+
+docker-architecture.png
 
 ## Información de Docker
 

@@ -19,7 +19,7 @@
 
 ## Arquitectura de Docker
 
-docker-architecture.png
+<img src="img/docker-architecture.png" style="max-width: 400px;">
 
 ## Información de Docker
 

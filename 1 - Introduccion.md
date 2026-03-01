@@ -19,7 +19,9 @@
 
 ## Arquitectura de Docker
 
-<img src="img/docker-architecture.png" style="max-width: 100px;">
+<p align="center">
+<img src="img/docker-architecture.png" style="width: 600px;">
+</p>
 
 ## Información de Docker
 

@@ -11,6 +11,11 @@ Podemos buscar imagenes en diferentes registries como:
 + Quay
 + AWS ECR public galery
 
+### Ciclo de vida de un contenedor
+<p align="center">
+<img src="img/ciclo.png" style="width: 500px;">
+</p>
+
 ## Trabajando con imágenes
 
 Una imagen de Docker es una plantilla de solo lectura que define al contenedor. La imagen contiene el código que se ejecutará, incluida cualquier definición para cualquier biblioteca o dependencia que el código necesite.

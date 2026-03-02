@@ -1,6 +1,10 @@
 # Imagenes y contenedores
 
-Las imágenes de Docker son plantillas inmutables de solo lectura que contienen el código, bibliotecas y configuraciones necesarias para ejecutar una aplicación. Los contenedores son las instancias de esas imagenes en ejecución, aisladas y ligeras, creadas a partir de estas imágenes. 
+Las imágenes de Docker son plantillas inmutables de solo lectura que contienen el código, bibliotecas y configuraciones necesarias para ejecutar una aplicación. Los contenedores son las instancias de esas imagenes en ejecución, aisladas y ligeras, creadas a partir de estas imágenes. Es decir puedo usar una imagen para arrancar varios contenedores.
+
+<p align="center">
+<img src="img/img-containers.png" style="width: 500px;">
+</p>
 
 ## Trabajando con imágenes
 

@@ -96,6 +96,14 @@ Para construir la imagen usaremos el siguiente comando:
 $ docker build --build-arg APP_VERSION=2.0 -t myapp:2.0 .
 ```
 
+### Diferencias variables de entorno (ENV) y los argumentos de construcción
+
+| Docker ARG (Build Argument) | Docker ENV (Environment Variable) | 
+|---|---|
+| Sólo disponible durante el proceso de creación de la imagen. | Disponible durante el proceso de compilación Y en el contenedor en ejecución. |
+| No se conserva en los metadatos/capas de la imagen final. | Persistió en la imagen final y fue accesible en tiempo de ejecución. |
+| Útil para configuraciones dinámicas como números de versión o feature flags. | Útil para configuraciones de tiempo de ejecución como claves API, URL de bases de datos, etc.|
+
 ### No cache
 
 Para deshabilitar el uso de la caché de compilación y reconstruir todas las capas desde cero usamos el flag --no-cache .

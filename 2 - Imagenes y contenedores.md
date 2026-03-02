@@ -6,6 +6,11 @@ Las imágenes de Docker son plantillas inmutables de solo lectura que contienen 
 <img src="img/img-containers.png" style="width: 500px;">
 </p>
 
+Podemos buscar imagenes en diferentes registries como:
++ Docker Hub
++ Quay
++ AWS ECR public galery
+
 ## Trabajando con imágenes
 
 Una imagen de Docker es una plantilla de solo lectura que define al contenedor. La imagen contiene el código que se ejecutará, incluida cualquier definición para cualquier biblioteca o dependencia que el código necesite.

@@ -5,30 +5,20 @@ Un Dockerfile es un archivo o documento de texto simple que incluye una serie de
 ## Estructura
 
 El dockerfile puede contener los siguinetes elementos:
-
+```sh
 FROM: Permite especificar la imagen base.
-
 MAINTAINER: Especifique el autor de una imagen.
-
 RUN: Ejecute comandos de compilación
-
 WORKDIR: Cambiar directorio de trabajo.
-
 COPY: Copiar archivos y directorios.
-
 ADD: Agregue archivos y directorios locales o remotos.
-
 EXPOSE: Describe en qué puertos escucha tu aplicación.
-
 VOLUME: Crea un volumen para montar.
-
 ENV: Establece variables de entorno.
-
 ARG: Utilice variables de tiempo de construcción.
-
 ENTRYPOINT: Especifica el ejecutable predeterminado.
-
 CMD: Especifique comandos predeterminados.
+```
 
 ## Capas
 

@@ -36,7 +36,9 @@ Hay dos principios importantes de las imágenes:
 + Las imágenes son inmutables. Una vez que se crea una imagen, no se puede modificar. Solo se puede crear una nueva imagen o agregar cambios sobre ella.
 + Las imágenes se componen de capas. Cada capa representa un conjunto de cambios en el sistema de archivos que agregan, eliminan o modifican archivos.
 
-
+<p align="center">
+<img src="img/layers.png" style="width: 500px;">
+</p>
 
 Cada instrucción de un Dockerfile (como RUN, COPY) crea una nueva capa con los cambios específicos, lo que permite reutilizar capas compartidas, optimizar el almacenamiento, acelerar las compilaciones y simplificar las actualizaciones incrementales
 

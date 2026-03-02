@@ -1,4 +1,4 @@
-# Contruyendo el Dockerfile
+# Dockerfile
 
 Un Dockerfile es un archivo o documento de texto simple que incluye una serie de instrucciones que se necesitan ejecutar de manera consecutiva para cumplir con los procesos necesarios para la creación de una nueva imagen.
 

@@ -31,6 +31,18 @@ La arquitectura de Docker se basa en un modelo cliente-servidor ligero que utili
 <img src="img/docker-architecture.png" style="width: 600px;">
 </p>
 
+## Maquinas virtuales VS Contenedores
+
+| Contenedor | Maquina Virtual | 
+|---|---|
+| Bajo impacto en el sistema operativo, rápido, menor uso de espacio en disco. | Alto impacto en el sistema operativo, lento, mayor uso de espacio en disco. |
+|Compartir, reconstruir y distribuir es sencillo. | Compartir, reconstruir y distribuir puede ser todo un reto. |
+|Encapsula aplicaciones y ambientes en lugar de la maquina entera. | Encapsula la maquina entera en lugar de solo aplicaciones y ambientes. |
+
+<p align="center">
+<img src="img/vms.png" style="width: 600px;">
+</p>
+
 ## Información de Docker
 
 Se pueden utilizar los siguientes subcomandos para obtener más información sobre la instalación y el uso de Docker:

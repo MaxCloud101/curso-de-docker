@@ -12,6 +12,16 @@ Docker admite los siguientes tipos de montajes de almacenamiento para almacenar 
 
 ## Volúmenes ( gestionados por Docker ) 
 
+Los volúmenes son mecanismos de almacenamiento persistentes administrados por el demonio de Docker. 
+
+Conservan los datos incluso después de que se eliminen los contenedores que los utilizan. 
+
+Los datos del volumen se almacenan en el sistema de archivos del host, pero para interactuar con los datos del volumen, debe montar el volumen en un contenedor.
+
+Los volúmenes son ideales para el procesamiento de datos críticos para las necesidades de almacenamiento a largo plazo.
+
+Se pueden crear dos tipos de volúmenes: Nombrados y anonimos
+
 #### docker volume create
 
 Crea un nuevo volumen en el que los contenedores pueden consumir y almacenar datos. Si no se especifica un nombre, Docker genera un nombre aleatorio.
@@ -62,6 +72,10 @@ docker run -v /app -p 8080:80 -d nginx
 
 ## Montajes de enlace
 
+Los montajes de enlace crean un vínculo directo entre una ruta del sistema host y un contenedor, lo que permite el acceso a archivos o directorios almacenados en cualquier parte del host. 
+
+Utilice montajes de enlace cuando necesite poder acceder a archivos tanto desde el contenedor como desde el host.
+
 #### Montamos una carpeta del host en el contenedor
 
 También podemos enlazar una carpeta en el host con el contenedor, el formato usado sera "-v HOST_PATH:CONTAINER_PATH"
@@ -70,6 +84,12 @@ También podemos enlazar una carpeta en el host con el contenedor, el formato us
 docker run -v /home/ec2-user/environment/max:/app -p 8080:80 -d nginx
 ```
 ## Montajes tmpfs  (Temporary file system)
+
+Si está ejecutando Docker en Linux, puede usar los montajes tmpfs.
+
+A diferencia de los volúmenes y los montajes de enlace, un montaje tmpfs es temporal y solo persiste en la memoria del host. Cuando el contenedor se detiene, el montaje tmpfs se elimina y los archivos escritos allí no se conservarán.
+
+Los montajes tmpfs se utilizan mejor en los casos en los que no desea que los datos persistan ni en la máquina host ni dentro del contenedor. Esto puede deberse a razones de seguridad o para proteger el rendimiento del contenedor cuando su aplicación necesita escribir un gran volumen de datos de estado no persistentes.
 
 #### Montamos una carpeta en la memoria del host
 

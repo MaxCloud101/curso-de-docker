@@ -33,6 +33,8 @@ La arquitectura de Docker se basa en un modelo cliente-servidor ligero que utili
 
 ## Maquinas virtuales VS Contenedores
 
+Las **máquinas virtuales (VM)** y los **contenedores** permiten ejecutar aplicaciones de forma aislada, pero funcionan de manera diferente. Una máquina virtual emula un computador completo. Un contenedor ejecuta aplicaciones aisladas, pero comparte el kernel del sistema operativo host.
+
 | Contenedor | Maquina Virtual | 
 |---|---|
 | Bajo impacto en el sistema operativo, rápido, menor uso de espacio en disco. | Alto impacto en el sistema operativo, lento, mayor uso de espacio en disco. |

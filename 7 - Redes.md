@@ -1,4 +1,4 @@
-# Trabajando con redes
+# Redes
 
 La red de contenedores se refiere a la capacidad de los contenedores de conectarse y comunicarse entre sí o con cargas de trabajo que no sean de Docker.
 

@@ -1,8 +1,16 @@
-# Trabajando con volúmenes
+# Almacenamiento
 
-Los volúmenes son el mecanismo para conservar los datos generados y utilizados por los contenedores Docker.
+De manera predeterminada, todos los archivos creados dentro de un contenedor se almacenan en una capa de contenedor que permite la escritura, los datos escritos en la capa de contenedor no persisten cuando se destruye el contenedor.
 
-## Volumenes nombrados
+La capa que permite la escritura es única por contenedor. No se pueden extraer fácilmente los datos de la capa que permite la escritura al host o a otro contenedor.
+
+Docker admite los siguientes tipos de montajes de almacenamiento para almacenar datos fuera de la capa de escritura del contenedor:
+
++ Volúmenes ( gestionados por Docker)
++ Montajes de enlace
++ Montajes tmpfs 
+
+## Volúmenes ( gestionados por Docker ) 
 
 #### docker volume create
 
@@ -35,8 +43,6 @@ Devuelve información sobre un volumen.
 $ docker volume inspect
 ```
 
-## Montando volumenes nombrados en contenedores
-
 #### Montamos un volumen nombrado en el contenedor
 Podemos montar un volumen mientras arrancamos un containers, si el volumen no se creo previamente este se crea, el formato usado sera "-v VOLUME_NAME:CONTAINER_PATH"
 
@@ -46,7 +52,7 @@ docker run -v demo_volume:/app -p 8080:80 -d nginx
 
 Podemos montar el mismo volumen en varios contenedores al mismo tiempo
 
-## Volumenes anonimos
+### Volumenes anonimos
 
 Docker lo crea automáticamente cuando se inicia un contenedor con un punto de montaje pero sin un nombre de volumen específico.
 
@@ -54,7 +60,7 @@ Docker lo crea automáticamente cuando se inicia un contenedor con un punto de m
 docker run -v /app -p 8080:80 -d nginx
 ```
 
-# Trabajando con enlace
+## Montajes de enlace
 
 #### Montamos una carpeta del host en el contenedor
 
@@ -63,7 +69,7 @@ También podemos enlazar una carpeta en el host con el contenedor, el formato us
 ```sh
 docker run -v /home/ec2-user/environment/max:/app -p 8080:80 -d nginx
 ```
-# Trabajando con tmpfs (Temporary file system)
+## Montajes tmpfs  (Temporary file system)
 
 #### Montamos una carpeta en la memoria del host
 

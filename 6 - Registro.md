@@ -1,4 +1,18 @@
-# Llevando nuestro contenedor al registro
+# Registro
+
+Un registro de Docker (Docker Registry) es un repositorio donde se almacenan y distribuyen imágenes Docker.
+
+Es básicamente el “servidor” desde donde haces:
+
++ docker pull
++ docker push
+
+Los mas conocidos son:
+
++ Docker Hub
++ AWS Elastic Container Registry
++ Google Container Registry
++ Azure Container Registry
 
 ## Trabajando con DockerHub
 

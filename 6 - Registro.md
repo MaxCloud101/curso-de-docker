@@ -7,6 +7,10 @@ Es básicamente el “servidor” desde donde haces:
 + docker pull
 + docker push
 
+<p align="center">
+<img src="img/docker-registry.png" style="width: 500px;">
+</p>
+
 Los mas conocidos son:
 
 + Docker Hub

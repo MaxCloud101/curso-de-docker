@@ -19,6 +19,12 @@
 
 ## Arquitectura de Docker
 
+**Docker Client :** Es la interfaz de línea de comandos (CLI) utilizada para interactuar con el motor de Docker (Docker Engine). Actúa como el intermediario entre el usuario y el demonio de Docker, enviando comandos a través de la API REST para gestionar contenedores e imágenes.
+
+**Docker Daemon (dockerd) :** Es el proceso de servicio en segundo plano que actúa como el motor central de Docker, corriendo en el sistema operativo host. Se encarga de gestionar el ciclo de vida completo de los contenedores (creación, ejecución, monitorización), imágenes, redes y volúmenes, escuchando solicitudes API de la CLI.
+
+**Docker Registry :** Es un sistema de almacenamiento y distribución centralizado para imágenes de Docker. Actúa como una biblioteca o repositorio donde se suben (push) y descargan (pull) las imágenes necesarias para ejecutar contenedores, facilitando el intercambio de software, el control de versiones y la implementación en entornos de desarrollo o producción
+
 <p align="center">
 <img src="img/docker-architecture.png" style="width: 600px;">
 </p>

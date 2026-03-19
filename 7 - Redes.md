@@ -52,6 +52,10 @@ docker network inspect [NAME]
 
 # Trabajando con redes bridge
 
+<p align="center">
+<img src="img/docker-bridge.png" style="max-width: 400px;">
+</p>
+
 Creamos una red con el driver bridge
 
 ```sh

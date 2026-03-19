@@ -26,6 +26,10 @@ Para poder trabajar con las imágenes utilizaremos el comando docker de la sigui
 
 #### docker image pull
 
+<p align="center">
+<img src="img/docker-pull.png" style="width: 500px;">
+</p>
+
 Permite descargar una imagen de un registro
 
 ```sh
@@ -55,6 +59,10 @@ También podemos hacerlo mediante el digesto
  ```
 
 #### docker image push
+
+<p align="center">
+<img src="img/docker-push.png" style="width: 500px;">
+</p>
 
 Este comando permite subir las imágenes en el registro de Docker Hub o AWS ECR.
 

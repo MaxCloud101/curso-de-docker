@@ -28,7 +28,7 @@ La arquitectura de Docker se basa en un modelo cliente-servidor ligero que utili
 + **Docker Registry :** Es un sistema de almacenamiento y distribución centralizado para imágenes de Docker. Actúa como una biblioteca o repositorio donde se suben (push) y descargan (pull) las imágenes necesarias para ejecutar contenedores, facilitando el intercambio de software, el control de versiones y la implementación en entornos de desarrollo o producción
 
 <p align="center">
-<img src="img/docker-architecture.png" style="width: 600px;">
+<img src="img/docker-architure2.png" style="width: 600px;">
 </p>
 
 ## Maquinas virtuales VS Contenedores

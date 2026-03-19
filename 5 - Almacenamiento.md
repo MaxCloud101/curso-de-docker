@@ -22,6 +22,10 @@ Los volúmenes son ideales para el procesamiento de datos críticos para las nec
 
 Se pueden crear dos tipos de volúmenes: Nombrados y anonimos
 
+<p align="center">
+<img src="img/docker-volume.png" style="width: 500px;">
+</p>
+
 #### docker volume create
 
 Crea un nuevo volumen en el que los contenedores pueden consumir y almacenar datos. Si no se especifica un nombre, Docker genera un nombre aleatorio.
@@ -75,6 +79,10 @@ docker run -v /app -p 8080:80 -d nginx
 Los montajes de enlace crean un vínculo directo entre una ruta del sistema host y un contenedor, lo que permite el acceso a archivos o directorios almacenados en cualquier parte del host. 
 
 Utilice montajes de enlace cuando necesite poder acceder a archivos tanto desde el contenedor como desde el host.
+
+<p align="center">
+<img src="img/docker-bind.png" style="width: 500px;">
+</p>
 
 #### Montamos una carpeta del host en el contenedor
 

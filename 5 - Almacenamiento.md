@@ -22,9 +22,6 @@ Los volúmenes son ideales para el procesamiento de datos críticos para las nec
 
 Se pueden crear dos tipos de volúmenes: Nombrados y anonimos
 
-<p align="center">
-<img src="img/docker-volume.png" style="width: 500px;">
-</p>
 
 #### docker volume create
 

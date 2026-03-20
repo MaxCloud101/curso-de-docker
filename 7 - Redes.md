@@ -52,6 +52,8 @@ docker network inspect [NAME]
 
 # Trabajando con redes bridge
 
+Una red bridge es la red por defecto que Docker crea para que los contenedores puedan comunicarse entre sí dentro del mismo host.
+
 <p align="center">
 <img src="img/docker-bridge.png" style="max-width: 400px;">
 </p>

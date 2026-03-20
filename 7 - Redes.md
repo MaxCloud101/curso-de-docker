@@ -112,6 +112,10 @@ curl container1:80
 
 El driver host permite enlazar un contenedor directamente con el host
 
+<p align="center">
+<img src="img/docker-host.png" style="max-width: 400px;">
+</p>
+
 Lanzamos un contenedor con el driver host
 
 ```sh

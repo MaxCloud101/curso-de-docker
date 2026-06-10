@@ -49,7 +49,7 @@ Deseamos descargar la imagen oficial de python, para ello nos dirigimos a docker
 Si deseamos descargar la imagen de python con la etiqueta 3.12.1 lanzamos el siguiente comando:
 
 ```sh
-$ docker pull python:3.12.1
+$ docker pull python:3.14.5
 ```
 
 También podemos hacerlo mediante el digesto

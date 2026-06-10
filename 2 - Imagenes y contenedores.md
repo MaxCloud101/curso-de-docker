@@ -55,7 +55,7 @@ $ docker pull python:3.14.5
 También podemos hacerlo mediante el digesto
 
 ```sh
- $ docker pull python@sha256:a3d69b8412f7068fd060ccc7e175825713d5a767e1e14753e75bce6f746c8a7e
+ $ docker pull python@sha256:2081144b23b38daa7fae3b7ee4b42cf2f858d88b0452736274aafaba96f3a6b6
  ```
 
 #### docker image push

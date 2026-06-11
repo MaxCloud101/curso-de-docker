@@ -86,7 +86,7 @@ WORKDIR /app
 RUN npm install -g serve
 COPY --from=build /app/build ./build
 EXPOSE 3000
-RUN npm install -g serve
+CMD ["serve", "-s", "build", "-l", "3000"]
 ```
 
 Construimos la imagen con el comando

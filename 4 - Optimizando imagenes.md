@@ -13,11 +13,11 @@ FROM node:18
 
 WORKDIR /app
 COPY app /app
-RUN npm install -g webserver.local
+RUN npm install -g serve
 RUN npm install && npm run build
 
 EXPOSE 3000
-CMD webserver.local -d ./build
+CMD ["serve", "-s", "build", "-l", "3000"]
 ```
 
 Construimos la imagen con el comando
@@ -45,11 +45,11 @@ FROM node:18-alpine
 
 WORKDIR /app
 COPY app /app
-RUN npm install -g webserver.local
+RUN npm install -g serve
 RUN npm install && npm run build
 
 EXPOSE 3000
-CMD webserver.local -d ./build
+CMD ["serve", "-s", "build", "-l", "3000"]
 ```
 
 Construimos la imagen con el comando
@@ -83,10 +83,10 @@ RUN npm install && npm run build
 
 FROM node:18-alpine
 WORKDIR /app
-RUN npm install -g webserver.local
+RUN npm install -g serve
 COPY --from=build /app/build ./build
 EXPOSE 3000
-CMD webserver.local -d ./build
+RUN npm install -g serve
 ```
 
 Construimos la imagen con el comando

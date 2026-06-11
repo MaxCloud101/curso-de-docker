@@ -92,7 +92,6 @@ Dockerfile
 FROM alpine:latest
 ARG APP_VERSION=1.0
 RUN echo "Building version: $APP_VERSION"
-ENV APP_VERSION=$APP_VERSION
 ```
 
 Para construir la imagen usaremos el siguiente comando:

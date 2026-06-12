@@ -93,8 +93,6 @@ docker run -v /home/ec2-user/environment/max:/app -p 8080:80 -d nginx
 ```
 ## Montajes tmpfs  (Temporary file system)
 
-Si está ejecutando Docker en Linux, puede usar los montajes tmpfs.
-
 A diferencia de los volúmenes y los montajes de enlace, un montaje tmpfs es temporal y solo persiste en la memoria del host. Cuando el contenedor se detiene, el montaje tmpfs se elimina y los archivos escritos allí no se conservarán.
 
 Los montajes tmpfs se utilizan mejor en los casos en los que no desea que los datos persistan ni en la máquina host ni dentro del contenedor. Esto puede deberse a razones de seguridad o para proteger el rendimiento del contenedor cuando su aplicación necesita escribir un gran volumen de datos de estado no persistentes.

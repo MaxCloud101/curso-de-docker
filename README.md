@@ -2,6 +2,8 @@
 
 Material oficial del curso de **Docker** de la comunidad **Nación Cloud**. Este repositorio reúne la documentación teórica, ejemplos prácticos y aplicaciones de referencia para aprender a crear, ejecutar y desplegar contenedores desde los conceptos básicos hasta temas avanzados.
 
+**Curso en youtube:** [Curso en Youtube](https://www.youtube.com/watch?v=aA5BBSb1X1k&list=PLt9k2f9tRGayEfn7um47fy4uxxJ2QTcWD)
+
 **Sitio Web:** [https://nacioncloud.com/](https://nacioncloud.com/)
 
 ---
